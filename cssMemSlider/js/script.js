@@ -1,7 +1,7 @@
 let slideIndex = 0;
 let timeoutId;
 
-function showSlides(index) {
+function showSlides() {
     clearTimeout(timeoutId);
     const slides = document.querySelectorAll(".slider__items");
     const dots = document.querySelectorAll(".dot");

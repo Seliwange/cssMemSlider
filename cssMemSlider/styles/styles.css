@@ -54,6 +54,7 @@
     background-color: #a4baff;
     border: 2px solid #a4baff;
     border-radius: 50%;
+    transition: all 1s;
 }
 
 .dot:not(:last-child) {
@@ -74,4 +75,21 @@
 .dot--active:hover {
     border: 2px solid aliceblue;
     background-color: transparent;
+}
+
+@media screen and (max-width: 320px) {
+    .slider__item{
+        row-gap: 60px;
+    }
+
+    .slider__img{
+        width: 265px;
+        height: 150px;
+    }
+
+    .dots{
+        position: relative;
+        top: -60px;
+        text-align: center;
+    }
 }
